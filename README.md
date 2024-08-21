@@ -1,15 +1,16 @@
 # Jazz Analysis
 
 ## Contents
-0. [Introduction](Introduction)
-1. [Installation](Installation)
-2. [Usage](Usage)
-3. [Project Architecture](Project Architecture)
-4. [Future Improvements](Future Improvements)
-5. [How to Contribute](How to Contribute)
+0. [Introduction](#introduction)
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Project Architecture](#project-architecture)
+4. [Workflow](#workflow)
+4. [Future Improvements](#future-improvements)
+5. [How to Contribute](#how-to-contribute)
 
 ## Introduction
-Welcome to the Jazz Analysis Project! This project is designed to explore trends in jazz music over time using data from the Spotify API. It allows you to analyze the popularity of jazz music and visualize trends across different decades.
+Welcome to my Jazz Analysis Project! This project is designed to explore trends in jazz music over time using data from the Spotify API. It allows you to analyze the popularity of jazz music and visualize trends across different decades.
 
 ## Installation
 **Pre-Requisites**
@@ -46,9 +47,9 @@ export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/service-account-file.json"
 1. Data Generation and Analysis:
 Run the main script to generate data on jazz albums, analyze the popularity of jazz over time, and save the results locally and in Google Cloud Storage:
 
-bash
-Copy code
+```
 python main.py
+```
 
 3. Store Results in Google Cloud Storage:
 The script will automatically upload the raw data and analysis results (e.g., plots) to a specified Google Cloud Storage bucket.

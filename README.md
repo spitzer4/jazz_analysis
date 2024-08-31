@@ -22,7 +22,7 @@ Welcome to my Jazz Analysis Project! This project is designed to explore trends 
 
 Clone the repository:
 ```
-git clone https://github.com/your_username/jazz-analysis-project.git
+git clone https://github.com/spitzer4/jazz-analysis-project.git
 cd jazz-analysis-project
 ```
 
@@ -57,7 +57,7 @@ The script will automatically upload the raw data and analysis results (e.g., pl
 ## Project Architecture
 The project is structured as follows:
 
-- ```generate_jazz_data.py```: Contains the logic to query the Spotify API for jazz albums, process the data, and analyze trends.
+- ```get_data.py```: Contains the logic to query the Spotify API for jazz albums, process the data, and analyze trends.
 - ```gcs_utils.py```: Utility functions for interacting with Google Cloud Storage, including uploading and downloading files.
 - ```main.py```: The main script that ties together the data generation, analysis, and storage operations.
 - ```data/```: Directory where local copies of raw and processed data are stored (this directory is included in .gitignore).

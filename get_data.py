@@ -8,14 +8,14 @@ def initialize_spotify_client():
     client_secret = os.environ.get('SPOTIPY_CLIENT_SECRET')
     auth_manager = spotipy.SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
     sp = spotipy.Spotify(auth_manager=auth_manager)
-    return spotipy_object
+    return sp
 
 def search_jazz_albums(sp):
     results = sp.search(q='jazz', type='album')
     albums = results['albums']['items']
     
     jazz_data = []
-    for album in jazz_albums:
+    for album in albums:
         album_id = album['id']
         album_name = album['name']
         album_data = sp.album(album_id)
